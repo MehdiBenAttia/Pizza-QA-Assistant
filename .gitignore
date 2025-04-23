@@ -3,3 +3,5 @@ devenv/
 chrome_langchain_db/
 *.pyc
 __pycache__/
+.zshrc
+.DS_Store
