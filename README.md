@@ -1,7 +1,3 @@
-Based on the files you provided and the general understanding of the project, I will prepare a `README.md` file that explains the subject, setup, execution, and some technical details. Below is the content for your `README.md`:
-
----
-
 # Pizza QA Assistant
 
 ## Overview
