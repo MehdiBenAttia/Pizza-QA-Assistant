@@ -1,0 +1,5 @@
+.env
+devenv/
+chrome_langchain_db/
+*.pyc
+__pycache__/
