@@ -133,4 +133,4 @@ The **Pizza QA Assistant** is an interactive RAG web application that demonstrat
 
 ---
 
-### You can now enjoy running the app locally or deploy it to any cloud platform! Let me know if you need further help.
+### You can now enjoy running the app locally or deploy it to any cloud platform! 
