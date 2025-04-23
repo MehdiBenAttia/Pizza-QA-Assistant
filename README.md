@@ -2,12 +2,12 @@
 
 ## Overview
 
-**Pizza QA Assistant** is a Streamlit-based web application designed to assist users in answering questions about a pizza restaurant. It uses a machine learning model to analyze and retrieve relevant reviews from a restaurant's review dataset to generate responses to user questions. The system is powered by Hugging Face’s model and the **Chroma** vector store for efficient document retrieval.
+**Pizza QA Assistant** is a Streamlit-based web application designed to assist users in answering questions about a pizza restaurant. It uses a RAG Syetem with LLM to analyze and retrieve relevant reviews from a restaurant's review dataset to generate responses to user questions. The system is powered by Hugging Face’s model and the **Chroma** vector store for efficient document retrieval.
 
 The core of the application is the ability to:
 1. Take user queries about the pizza restaurant.
 2. Retrieve relevant reviews from a dataset.
-3. Pass the reviews to a language model to generate answers.
+3. Pass the reviews to a language model (in our case DeepSeek) to generate answers.
 
 This project serves as a practical demonstration of integrating **natural language processing (NLP)** with a review-based dataset for answering domain-specific questions.
 
@@ -123,22 +123,13 @@ To run this project locally, you’ll need the following:
 
 - **Deployment Platform**: The app is currently designed to be run locally or on platforms like **Streamlit Cloud**. However, the current setup may run into issues if the underlying system doesn’t support certain packages (like SQLite) that are required for the vector database (Chroma).
 - **Dataset Size**: The app works with a specific dataset of pizza restaurant reviews. As the dataset grows, the performance of the app might be impacted due to the increased size of the vector database.
-- **Model Performance**: The pre-trained model may not always provide perfectly accurate answers, depending on the quality and relevance of the reviews retrieved.
 - **Dependence on Internet**: Since the app uses the Hugging Face API to generate answers, a stable internet connection is required to fetch the model responses.
-
----
-
-## Possible Improvements
-
-- **Caching**: Implement caching mechanisms to speed up repeated queries.
-- **UI Improvements**: Enhance the user interface to allow more interactive features, such as filtering reviews by rating or date.
-- **Advanced Querying**: Add the ability to ask multiple types of questions (e.g., specific dishes, ambiance) and improve the depth of answers.
 
 ---
 
 ## Conclusion
 
-The **Pizza QA Assistant** is an interactive web application that demonstrates how machine learning models can be used to provide answers to questions based on real-world data. The app leverages **Streamlit**, **Hugging Face**, and **Chroma** for efficient document retrieval, making it a powerful tool for answering domain-specific questions.
+The **Pizza QA Assistant** is an interactive RAG web application that demonstrates how machine learning models can be used to provide answers to questions based on real-world data. The app leverages **Streamlit**, **Hugging Face**, and **Chroma** for efficient document retrieval, making it a powerful tool for answering domain-specific questions.
 
 ---
 
